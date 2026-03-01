@@ -15,9 +15,13 @@ No venv or `pip install` needed when using Docker.
 
 ## Deployment to GitHub Pages
 
-- **Automatic:** Pushing to the `main` branch triggers the GitHub Action in `.github/workflows/deploy.yml`, which installs from `requirements.txt`, builds the site, and deploys to GitHub Pages.
+- **Automatic:** Pushing to the `main` branch runs the workflow in `.github/workflows/deploy.yml`, which builds the site, and deploys to GitHub Pages.
+- **First-time setup — required for the site to appear:**
+  1. On GitHub, open your repo → **Settings** → **Pages** (sidebar).
+  2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+  3. Push a commit to `main` (or run the workflow from the **Actions** tab). After the workflow completes, the site will be at https://yuzhong-chen.github.io (may take 1–2 minutes).
 
-- **First-time setup:** In your repo on GitHub go to **Settings → Pages**. Under "Build and deployment", set **Source** to **GitHub Actions**. After the first successful run, the site will be at https://yuzhong-chen.github.io.
+If the site doesn't look right, check the **Actions** tab for a successful run of "Deploy site to GitHub Pages" and that both the **build** and **deploy** jobs succeeded.
 
 ## Project structure
 
