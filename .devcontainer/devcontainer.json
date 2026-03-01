@@ -1,0 +1,27 @@
+/* Reference: https://aka.ms/devcontainer.json */
+{
+    "name": "YuZhong Chen Page Workspace",
+    "dockerComposeFile": "../docker/compose.yaml",
+    "service": "yuzhong-chen-page",
+    // Set the USER_UID
+    "initializeCommand": "\"${localWorkspaceFolder}\"/.devcontainer/create_env.sh",
+    // Workspace settings
+    "workspaceFolder": "/home/user/yuzhong-chen-page",
+    // Vscode extensions
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cpptools-themes",
+                "ms-python.black-formatter",
+                "twxs.cmake",
+                "donjayamanne.python-extension-pack",
+                "eamodio.gitlens",
+                "mhutchie.git-graph",
+                "streetsidesoftware.code-spell-checker",
+                "oderwat.indent-rainbow",
+                "anthropic.claude-code"
+            ]
+        }
+    }
+}

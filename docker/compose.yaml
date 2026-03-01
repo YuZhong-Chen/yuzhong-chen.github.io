@@ -1,0 +1,36 @@
+services:
+  yuzhong-chen-page:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        # Set the USER_UID
+        USER_UID: "${USER_UID:-1000}"
+        # Set to "YES" if using Claude Code CLI or set to "" if not using Claude Code CLI
+        CLAUDE_CODE: "YES"
+    image: yuzhong1214/yuzhong-chen-page:latest
+    container_name: yuzhong-chen-page
+    stdin_open: true
+    tty: true
+    privileged: true
+    command: /bin/bash
+    network_mode: host
+    working_dir: /home/user/yuzhong-chen-page
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      # Mount local timezone into container. ( Readonly )
+      # Reference: https://stackoverflow.com/questions/57607381/how-do-i-change-timezone-in-a-docker-container
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+      # Mount X11 server
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      # X11-unix is mounted to allow GUI applications to display on host.
+      - $HOME/.Xauthority:/home/user/.Xauthority
+      # Mount devices.
+      - /dev:/dev
+      # Mount workspace
+      - ..:/home/user/yuzhong-chen-page
+      # Mount credentials (for Claude Code CLI)
+      - $HOME/.claude:/home/user/.claude
+      - $HOME/.claude.json:/home/user/.claude.json
