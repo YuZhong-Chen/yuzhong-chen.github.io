@@ -40,19 +40,13 @@ RUN apt-get update && apt-get install -y \
     zip \
     && rm -rf /var/lib/apt/lists/*
 
-# Install python packages
-# Reference: https://squidfunk.github.io/mkdocs-material/setup/
-RUN pip3 install --no-cache-dir \
-    mkdocs-material \
-    mkdocs-minify-plugin \
-    mkdocs-redirects \
-    mkdocs-git-revision-date-localized-plugin \
-    mkdocs-macros-plugin \
-    mkdocs-git-committers-plugin-2
+# Install python packages — MkDocs 1.x + Material (stable)
+# https://squidfunk.github.io/mkdocs-material/setup/
+COPY requirements.txt /tmp/requirements.txt
+RUN pip3 install --no-cache-dir -r /tmp/requirements.txt
 
 # Set the default user
 USER $USERNAME
-CMD ["/bin/bash"]
 COPY --chown=$USERNAME:$USERNAME \
     .bashrc /home/$USERNAME/.bashrc
 
@@ -65,3 +59,5 @@ RUN /tmp/install_claude_code.sh && rm /tmp/install_claude_code.sh
 # Install custom environment
 RUN git clone https://github.com/YuZhong-Chen/.setup_env.git ~/.setup_env \
     && ~/.setup_env/install.sh
+
+CMD ["/bin/bash"]
