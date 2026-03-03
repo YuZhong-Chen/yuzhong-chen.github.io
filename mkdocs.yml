@@ -28,6 +28,9 @@ theme:
     - navigation.sections
     - toc.integrate
     - content.code.copy
+  font:
+    text: Roboto
+    code: Roboto Mono
 
 plugins:
   - search
@@ -35,6 +38,11 @@ plugins:
 nav:
   - Home: index.md
   - About: about.md
+  - Education: education.md
+  - Experience: experience.md
+  - Awards: awards.md
+  - Projects: projects.md
+  - Contact: contact.md
 
 markdown_extensions:
   - pymdownx.highlight:
