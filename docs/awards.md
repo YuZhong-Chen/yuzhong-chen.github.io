@@ -1,7 +1,7 @@
 # Awards & Achievements
 
-### AMD Pervasive AI Developer Contest  
-*San Francisco, USA · [Github](https://github.com)*
+### [AMD Pervasive AI Developer Contest](https://www.hackster.io/contests/amd2023#category-1091)
+*San Francisco, USA · [Github](https://github.com/YuZhong-Chen/LLM-Navigation)*
 
 **Third Prize** · Oct 2024
 
@@ -9,8 +9,10 @@
 
 ---
 
-### Eurobot International Students Robotic Contest  
-*Nantes, France · [Webpage](https://www.eurobot.org)*
+### [Eurobot International Students Robotic Contest](https://www.eurobot.org/eurobot-contest/eurobot-2023/)
+*Nantes, France*
+
+![Eurobot](figures/eurobot.png){ width="400" }
 
 **Fifth Prize, Innovation Prize** · May 2023
 
@@ -31,6 +33,8 @@
 
 ### TEL Robot Competition  
 *Kaohsiung, Taiwan*
+
+![TEL Robot Competition](figures/tel_2022.jpg){ width="400" }
 
 **Advanced to the finals** · Dec 2022
 

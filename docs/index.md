@@ -1,5 +1,7 @@
 # Yu-Chung Chen
 
+![Headshot](figures/headshot.jpg){ width="200" }
+
 **Graduate student in Networking & Multimedia** · National Taiwan University · Taipei, Taiwan
 
 ---

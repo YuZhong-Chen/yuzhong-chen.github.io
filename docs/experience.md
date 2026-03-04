@@ -1,6 +1,6 @@
 # Experience
 
-### Inventec Corporation — AI Center  
+### [Inventec Corporation](https://www.inventec.com/) — AI Center  
 *Taipei, Taiwan*
 
 **Internship** · Aug 2025 – Oct 2025
@@ -10,7 +10,7 @@
 
 ---
 
-### DIT Robotics  
+### [DIT Robotics](https://www.facebook.com/DIT.robotics/)  
 *Hsinchu, Taiwan*
 
 **Team Member** · Dec 2021 – Nov 2023

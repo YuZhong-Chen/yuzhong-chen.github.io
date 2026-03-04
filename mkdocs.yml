@@ -52,3 +52,4 @@ markdown_extensions:
       alternate_style: true
   - admonition
   - tables
+  - attr_list
