@@ -12,7 +12,11 @@
 ### [Eurobot International Students Robotic Contest](https://www.eurobot.org/eurobot-contest/eurobot-2023/)
 *Nantes, France*
 
-![Eurobot](figures/eurobot.png){ width="400" }
+<div class="award-image" markdown>
+
+![Eurobot](figures/eurobot.png)
+
+</div>
 
 **Fifth Prize, Innovation Prize** · May 2023
 
@@ -34,7 +38,11 @@
 ### TEL Robot Competition  
 *Kaohsiung, Taiwan*
 
-![TEL Robot Competition](figures/tel_2022.jpg){ width="400" }
+<div class="award-image" markdown>
+
+![TEL Robot Competition](figures/tel_2022.jpg)
+
+</div>
 
 **Advanced to the finals** · Dec 2022
 

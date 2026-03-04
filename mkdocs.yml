@@ -42,7 +42,6 @@ nav:
   - Experience: experience.md
   - Awards: awards.md
   - Projects: projects.md
-  - Contact: contact.md
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -53,3 +52,7 @@ markdown_extensions:
   - admonition
   - tables
   - attr_list
+  - md_in_html
+
+extra_css:
+  - stylesheets/extra.css
